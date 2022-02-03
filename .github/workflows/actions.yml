@@ -30,4 +30,4 @@ jobs:
         pip install docker-compose
     - name: Run Tests & autopep8 & Flake8
       run: |
-        docker-compose run app sh -c "python manage.py test && autopep8 --in-place --recuersive . && flake8"
+        docker-compose run app sh -c "python manage.py test && autopep8 --in-place --recursive . && flake8"
